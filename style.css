@@ -1,0 +1,194 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f7f9fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== BANNER ===== */
+.banner {
+  background: linear-gradient(to bottom, #6590a4, #17292f);
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.banner h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 1.2rem;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background: linear-gradient(to left, rgb(22, 22, 22), rgb(41, 87, 95));
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #57d6ff;
+}
+
+/* ===== LAYOUT ===== */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  gap: 20px;
+}
+
+.left-col,
+.right-col {
+  background: linear-gradient(to right, rgb(155, 194, 194), rgb(217, 218, 219));
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 2);
+  padding: 20px;
+}
+
+.left-col {
+  flex: 1 1 30%;
+  min-width: 280px;
+}
+
+.right-col {
+  flex: 2 1 65%;
+  min-width: 320px;
+}
+
+/* ===== PROFILE IMAGE ===== */
+.profile-pic {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic img {
+  width: 150px;
+  height: 190px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffffff;
+}
+
+/* ===== SECTION ===== */
+.section {
+  margin-bottom: 30px;
+}
+
+.section p {
+  text-align: justify;
+  font-size: 14px;
+}
+
+.section h2 {
+  font-size: 20px;
+  display: inline-block;
+  margin-bottom: 14px;
+  color: black;
+}
+
+.contact-info,
+.skills,
+.languages,
+.hobbies,
+.timeline,
+.section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact-info li,
+.skills li,
+.languages li,
+.hobbies li,
+.section ul li {
+  margin-bottom: 8px;
+}
+
+/* ===== TIMELINE ===== */
+.timeline-entry {
+  margin-bottom: 15px;
+}
+
+.timeline-entry p {
+  font-size: 14px;
+}
+
+.timeline-entry h3 {
+  font-size: 1rem;
+  color: #242323;
+}
+
+/* ===== SOCIAL ICONS ===== */
+.socials {
+  display: flex;
+  gap: 15px;
+  font-size: 1.4rem;
+}
+
+.socials a {
+  transition: transform 0.3s;
+}
+
+.icon-link.github i {
+  color: #222;
+}
+
+.icon-link.facebook i {
+  color: blue;
+}
+
+.icon-link.instagram i {
+  color: #e1306c;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+}
+
+/* ===== ANIMATIONS ===== */
+.section {
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-col,
+  .right-col {
+    flex: 1 1 100%;
+  }
+}
